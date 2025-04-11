@@ -1,0 +1,56 @@
+{
+  "subject": "Science",
+  "chapters": [
+    {
+      "chapterId": "sci-ch1",
+      "title": "Electricity Basics",
+      "summary": "In this chapter, we’ll explore the flow of electric current, understand potential difference, and see how voltage, current, and resistance all tie together using Ohm’s Law. You’ll also learn how to use ammeters and voltmeters like a true electric wizard ⚡.",
+      "teachbackKeywords": ["current", "potential difference", "Ohm's Law", "resistance", "voltage", "ammeter", "voltmeter"],
+      "lessons": [
+        {
+          "lessonId": "sci-l1",
+          "title": "Electric Current",
+          "summary": "Imagine electricity like a bunch of tiny particles (electrons) rushing through a wire like a water slide. That’s electric current! It tells us how many charges are passing through every second. We measure it in amperes using a special tool called an ammeter. The formula I = Q/t helps you find current when you know the total charge and time.",
+          "teachbackKeywords": ["electric current", "Q", "t", "I", "ammeter", "series"],
+          "questions": [
+            {
+              "id": "q1",
+              "question": "What is electric current and how is it measured?",
+              "answer": "Electric current is the rate at which electric charge flows through a conductor. It is measured in amperes using an ammeter connected in series.",
+              "keywords": ["electric current", "ammeter", "ampere", "I = Q/t"]
+            }
+          ]
+        },
+        {
+          "lessonId": "sci-l2",
+          "title": "Potential Difference",
+          "summary": "Voltage is like the push that makes electric charges move. This push is called potential difference, and it’s what drives the current through a circuit. We measure it in volts using a voltmeter, which is connected in parallel. The formula V = W/Q tells us how much energy is used to move a certain amount of charge.",
+          "teachbackKeywords": ["potential difference", "voltage", "V", "W", "Q", "voltmeter", "parallel"],
+          "questions": [
+            {
+              "id": "q2",
+              "question": "What is potential difference and how is it related to work and charge?",
+              "answer": "Potential difference is the amount of work done to move a unit charge between two points. It is calculated using V = W/Q and measured with a voltmeter connected in parallel.",
+              "keywords": ["potential difference", "V = W/Q", "voltage", "volt", "joule", "coulomb", "voltmeter"]
+            }
+          ]
+        },
+        {
+          "lessonId": "sci-l3",
+          "title": "Ohm’s Law",
+          "summary": "Ohm’s Law is like the ultimate cheat code for electric circuits. It connects voltage (V), current (I), and resistance (R) with the equation V = IR. This means if you know any two of these values, you can always find the third! Resistance tells us how much a material resists the flow of current. This law only works when the temperature is constant.",
+          "teachbackKeywords": ["Ohm’s Law", "V = IR", "resistance", "voltage", "current", "temperature"],
+          "questions": [
+            {
+              "id": "q3",
+              "question": "State Ohm’s law and derive the relation between current, voltage, and resistance.",
+              "answer": "Ohm’s Law states that current is directly proportional to voltage when temperature is constant. The formula is V = IR, where V is voltage, I is current, and R is resistance.",
+              "keywords": ["Ohm’s Law", "V = IR", "current", "voltage", "resistance", "temperature"]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+
