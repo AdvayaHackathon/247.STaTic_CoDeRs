@@ -23,17 +23,13 @@ export default function Home() {
   };
 
   const features = [
+    { title: "🧮 Exponent Express", link: "/games/exponent-express" },
     { title: "🎙️ Voice Teachback", link: "/voice" },
-    { title: "📝 Text Teachback", link: "/text" },
-    { title: "🧠 Reflection Mode", link: "/reflection" },
-    { title: "📚 Personal Archive", link: "/archive" },
-    { title: "🔁 Peer Swap (Offline)", link: "/peerswap" },
-    { title: "🌐 Cloud Sync (Optional)", link: "/cloudsync" },
+    { title: "🧠 Conversational AI", link: "/conversational-ai" },
   ];
 
   return (
     <main className="min-h-screen bg-gradient-to-br from-black via-[#1e002e] to-[#0e0e0e] text-white">
-
       {/* Navbar */}
       <nav className="w-full px-6 py-4 border-b border-purple-800 bg-[#1a0028] flex items-center justify-between shadow-md">
         <div className="flex items-center gap-4">
@@ -101,18 +97,18 @@ export default function Home() {
             <Link href="/teachback">Start a Teachback</Link>
           </Button>
           <Button asChild variant="secondary" className="bg-white text-purple-800 hover:bg-purple-200">
-            <Link href="#">View Archive</Link>
+            <Link href="/archive">View Archive</Link>
           </Button>
         </div>
       </section>
 
-      {/* Feature Cards */}
-      <section className="max-w-6xl mx-auto p-6 grid gap-6 md:grid-cols-3">
+      {/* Feature Cards as Horizontal Flex */}
+      <section className="max-w-6xl mx-auto p-6 flex flex-wrap justify-center gap-6">
         {features.map((feature, i) => (
           <Link
             href={feature.link}
             key={i}
-            className="rounded-2xl p-5 bg-[#f5e9ff] text-black border border-purple-600 shadow-md hover:shadow-lg transition-all hover:scale-105"
+            className="w-[280px] rounded-2xl p-5 bg-[#f5e9ff] text-black border border-purple-600 shadow-md hover:shadow-lg transition-all hover:scale-105"
           >
             <h3 className="text-xl font-semibold mb-2 text-purple-900">{feature.title}</h3>
             <p className="text-sm text-black">Learn more about {feature.title.split(" ")[1]}.</p>

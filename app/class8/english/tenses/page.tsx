@@ -1,6 +1,6 @@
 'use client';
 
-import { useRouter } from "next/navigation";
+import { useRouter } from 'next/navigation';
 
 export default function TensesPage() {
   const router = useRouter();
@@ -9,7 +9,7 @@ export default function TensesPage() {
     <main className="min-h-screen bg-zinc-900 text-white p-6">
       {/* Back Button */}
       <button
-        onClick={() => router.push("/class8/english")}
+        onClick={() => router.push('/class8/english')}
         className="mb-4 bg-zinc-700 hover:bg-zinc-600 text-purple-300 px-4 py-2 rounded-md transition"
       >
         ← Back to English Topics
@@ -25,7 +25,10 @@ export default function TensesPage() {
             <p className="text-zinc-300 mb-3">
               Explain what you’ve learned about tenses in your own words. Record a voice, write a short summary, or upload a short video!
             </p>
-            <button className="bg-purple-700 text-white px-4 py-2 rounded-lg hover:bg-purple-600 transition">
+            <button
+              onClick={() => router.push('/class8/english/tenses/teachback')}
+              className="bg-purple-700 text-white px-4 py-2 rounded-lg hover:bg-purple-600 hover:scale-[1.03] transition-all duration-200 cursor-pointer"
+            >
               Start Teachback
             </button>
           </section>
